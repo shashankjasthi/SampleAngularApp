@@ -1,9 +1,16 @@
 <div>
-
-
-<app-product-list></app-product-list>
-
-
-  </div>
+ <nav class = 'navbar navbar-default'>
+   <div clas='container-fluid'>
+        <a class='navbar-brand'>{{title}}</a>
+        <ul class='nav navbar-nav'>
+          <li><a [routerLink]="['/products']">Home</a></li>
+           <li><a [routerLink]="['/products']">Product List</a></li>
+        </ul>
+   </div>
+ </nav>
+ <div class='container-fluid'>
+ <router-outlet></router-outlet>
+</div>
+</div>
  
 
